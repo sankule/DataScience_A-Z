@@ -1,7 +1,7 @@
 # Polynomial Regression
 
 # Importing the dataset
-dataset = read.csv('Position_Salaries.csv')
+dataset = read.csv("C:/Users/admin/Desktop/Swarit GIT/DataScience_A-Z/Part 2 - Regression/Section 6 - Polynomial Regression/Position_Salaries.csv")
 dataset = dataset[2:3]
 
 # Splitting the dataset into the Training set and Test set
