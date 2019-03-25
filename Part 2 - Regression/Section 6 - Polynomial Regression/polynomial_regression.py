@@ -28,6 +28,8 @@ lin_reg.fit(X, y)
 # Fitting Polynomial Regression to the dataset
 from sklearn.preprocessing import PolynomialFeatures
 poly_reg = PolynomialFeatures(degree = 4)
+# trying other degree of polynomials as well
+poly_reg = PolynomialFeatures(degree = 3)
 X_poly = poly_reg.fit_transform(X)
 poly_reg.fit(X_poly, y)
 lin_reg_2 = LinearRegression()
@@ -63,4 +65,4 @@ plt.show()
 lin_reg.predict(6.5)
 
 # Predicting a new result with Polynomial Regression
-lin_reg_2.predict(poly_reg.fit_transform(6.5))
+lin_reg_2.predict(poly_reg.fit_transform(6.5)) # transofrming before predicting 
